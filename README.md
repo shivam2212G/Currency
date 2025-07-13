@@ -1,2 +1,0 @@
-# Currency
-Just for fun
