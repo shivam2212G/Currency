@@ -57,7 +57,9 @@ void main(){
     print('Ok doing');
     a++;
   }
+
   while(a<10);
+
 
 
 
