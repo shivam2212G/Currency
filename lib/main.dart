@@ -31,7 +31,7 @@ void main(){
 
 
   if(now=='hello'){
-    print('Hello Januuuuuuuu');
+    print('Hello Januuuuuuuuu');
   }
   else if(1>3){
     print('Ajj Rattt ');
