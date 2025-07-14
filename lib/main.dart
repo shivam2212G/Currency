@@ -27,7 +27,7 @@ void main(){
 
   final now;                  // not changable and declared 1st or second time only ....
   now = 'hell';
-  // now = 'Suhani'; not valid
+  // now = 'Shani'; not valid
 
 
   if(now=='hello'){
