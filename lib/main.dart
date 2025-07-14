@@ -34,7 +34,7 @@ void main(){
     print('Hello Januuuuuuuuuuuuu');
   }
   else if(1>3){
-    print('Ajj Rattt ');
+    print('Ajj Ratttttt ');
   }
   else{
     print('${22+43}Answer');
