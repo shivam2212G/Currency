@@ -25,7 +25,7 @@ void main(){
 
   print(pi);
 
-  final now;                  // not changable and declared 1st or second time only
+  final now;                  // not changable and declared 1st or second time only ....
   now = 'hell';
   // now = 'Suhani'; not valid
 
