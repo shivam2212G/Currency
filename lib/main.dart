@@ -1,5 +1,7 @@
 
 void main(){
+
+  // variables======================================================================================
   var name = "Shivam";        // Dart infers it as String
   int age = 20;               // Explicit type
   double weight = 52.5;
@@ -29,6 +31,9 @@ void main(){
   now = 'hell';
   // now = 'Shani'; not valid
 
+  // variable end ===================================================================================================================
+
+  // Loop & if else ===================================================================================================================
 
   if(now=='hello'){
     print('Hello Januuuuuuuuuuuuu');
@@ -63,6 +68,11 @@ void main(){
     a++;
   }
   while(a<10);
+
+  // Loops End ===============================================================================================================
+
+
+  // List ===================================================================================================================
 
 
   List<String> fruits = ["Apple", "Banana", "Mango"];
@@ -143,6 +153,74 @@ void main(){
     print("${element['name']}");
   },);
 
+  // List End =====================================================================================================================================
+
+  // Fuctions ===========================================================================================================================
+
+  void fun1(){
+    print('Hello');
+  }
+  fun1();
+
+
+  int fun2(int a, int b){
+    return a+b;
+  }
+
+  int sum = fun2(22, 33);
+  print(sum);
+
+
+  void fun3([String name = 'Suhani']){
+    print(name);
+  }
+  fun3();
+  fun3('Shivam');
+
+  int multiply(int a, int b) => a * b; // one line function
+  multiply(5, 3);
+
+
+  void greet([String name = "Guest"]) {
+    print("Hello, $name!");
+  }
+  greet();          // Hello, Guest
+  greet("Shivam");  // Hello, Shivam
+
+
+  void printDetails({String? name, int? age = 33 }) {  //Nullable Parameter function & default
+    print("Name: $name, Age: $age");
+  }
+  printDetails(name: 'Handi',age: 20);
+
+  void myfun({String? user_name = 'Shiani'}){
+    print('${user_name} Go');
+  }
+  myfun();  // Shiani Go
+
+  int? fun5({int? a = 5}){ // nullable return
+    return a;
+  }
+  print(fun5());
+
+
+  var allnumbers = [1, 2, 3];
+  allnumbers.forEach((number) {  //Anonymous Functions (has no name & call automatically)
+    print(number * 2);
+  });
+
+
+
+  void operation(int a, int b, Function action) {   //  Higher-Order Functions (one to another function call)
+    print(action(a, b));
+  }
+  int addfun(int a, int b) => a + b;
+
+  operation(4, 5, addfun); // 9
+
+  // Function End ================================================================================================================================
+
+  // Null Safety ==============================================================================================================
 }
 
 
